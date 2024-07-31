@@ -22,7 +22,7 @@ class openedTab extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="about-col-1">
-                            <img src="images/user.png" alt="User"/>
+                            <img src="Assets/user.png" alt="User"/>
                         </div>
                         <div className="about-col-2">
                             <h1 className="sub-title">About me:</h1>
