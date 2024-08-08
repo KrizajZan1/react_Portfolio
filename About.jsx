@@ -26,10 +26,7 @@ class openedTab extends React.Component {
                         </div>
                         <div className="about-col-2">
                             <h1 className="sub-title">About me:</h1>
-                            <p>I am a 21 year young "adult" from Slovenia. Currently I am working on my college degree in programming. 
-                                Outside school I never did much programming on my own because I didn't have any ideas what to program. (I was also quite lazy...) 
-                                But after my last job interview to which I was not accepted mainly because of my lack in skills and projects, I decided that I would start to program more. 
-                                Thats also how this website started to exist.
+                            <p>I am a 21 year young "adult" from Slovenia. I am finishing my second year at college and I am working on my diplomatic assignment which will be a fittness iOS application, that is why I am currently learning about SwiftUI.
                             </p>
 
                             <div className="tab-titles">
@@ -46,26 +43,19 @@ class openedTab extends React.Component {
                             </div>
                             <div className="tab-contents" id="experience">
                                 <ul>
-                                    <li><span>Creatim</span><br/>In my final year of college for my necessary practical experience I got accepted to this company
-                                    where I would learn more about Web development. At first they gave me an assignment that I create a simple To-do list with just
-                                    basic HTML CSS and JS. After that they gave me a Vue assignment where I would use an API that displays data about Star Wars characters.
+                                    <li><span>Creatim</span><br/>At this company I learned more about Web Development. At first they gave me an assignment to create a simple To-do list with just basic HTML CSS and JS. After that they gave me a Vue assignment where I would use an API that displays data about Star Wars characters.
                                     </li>
-                                    <li><span>Caretronic</span><br/>This was my latest necessary practical experience company. I found about this 
-                                    company through an add on a website about teenage work jobs? At this company I was building and preparing 
-                                    servers, that would later be sent away. So i built them together and then I installed all the software
-                                    and so on and so forth. Later in my summer vacation I decided to work there as a programmer. And I was working on
-                                    their website and making it better with some extra features.</li>
+                                    <li><span>Caretronic</span><br/>This was my latest necessary practical experience company. At this company I was building and preparing servers, that would later be sent away. So I built them together and then I installed all the software and so on and so forth. Later in my summer vacation I decided to work there as a programmer. And I was working on their website and making it better with some extra features.</li>
                                     <li><span>SRC Infonet</span><br/>This company was the first company where I started my necessary practical
-                                    experience. I got accepted because my family knew a guy that worked there. I was about 16 maybe 17 years old
-                                    and at this company I didn't get a lot of programming assignments, but mainly what I learned from here 
-                                    was SQL databases.</li>
+                                    experience. I was young and also did not recieve much programming assignments however I did learn SQL there.</li>
                                 </ul>
                             </div>
                             <div className="tab-contents" id="free-time">
                                 <ul>
                                     <li><span>In my free time I like to:</span></li>
-                                    <li><span>Read</span><br/>books on self development.</li>
-                                    <li><span>Workout</span><br/>in the gym.</li>
+                                    <li>Read books on self development.</li>
+                                    <li>Workout in the gym or playing basketball with friends</li>
+                                    <li>Watching comedy movies/series</li>
                                 </ul>
                             </div>
                         </div>

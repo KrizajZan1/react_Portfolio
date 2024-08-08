@@ -33,7 +33,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="work">
-                    <img src="Assets/work-2.png"/>
+                    <img src="Assets/StarWarsAPI.png"/>
                     <div className="layer">
                         <h3>Star Wars characters</h3>
                         <p>I also made this website where you can change Star Wars characters data. Website is made with Vue framework</p>
@@ -41,7 +41,6 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-            <a href="#" className="btn">See more</a>
         </div>
   </div>
 }

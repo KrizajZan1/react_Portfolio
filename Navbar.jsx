@@ -1,28 +1,35 @@
-import React from "react"
-import "./styles.css"
+import React, { useState } from "react";
+import "./styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
-  return <div id="header">
-  <div className="container">
-      <nav>
-          <img src="Assets/logo.png" className="logo"/>
-          <ul id="sidemenu">
-              <li><a href="#header">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#specialities">My specialties</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <i className="fa-solid fa-xmark" onclick="closemenu()"></i>
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <div id="header">
+      <div className="container">
+        <nav>
+          <img src="Assets/logo.png" className="logo" alt="Logo" />
+          <ul id="sidemenu" className={menuOpen ? "open" : ""}>
+            <li><a href="#header" onClick={toggleMenu}>Home</a></li>
+            <li><a href="#about" onClick={toggleMenu}>About</a></li>
+            <li><a href="#specialities" onClick={toggleMenu}>My specialties</a></li>
+            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+            <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
           </ul>
-          {/* <FontAwesomeIcon icon={faBars} onClick={() => this.openmenu()} /> */}
-          <i className="fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div className="header-text">
-          <p>Student/Web Designer</p>
-          <h1>Hi, I'm <span>Žan Križaj</span> <br/> from Slovenia</h1>
+          <div className="menu-icon" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={faBars} />
+          </div>
+        </nav>
+        <div className="header-text">
+          <h1>Hi, I'm <span>Žan Križaj</span> <br /> <span>Front End</span> Developer</h1>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
+  );
 }
