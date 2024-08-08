@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -49,7 +49,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: teal;
+    background: #00bfae;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -67,7 +67,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: teal;
+    color: #00bfae;
 }
 /* ----------------about----------------- */
 #about {
@@ -102,7 +102,7 @@ nav ul li a:hover::after{
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: teal;
+    color: #00bfae;
 }
 
 .tab-titles {
@@ -122,7 +122,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: teal;
+    background: #00bfae;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -140,7 +140,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span {
-    color: teal;
+    color: #00bfae;
     font-size: 14px;
 }
 
@@ -181,7 +181,7 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
 }
 .specialties-list div:hover{
-    background: teal;
+    background: #00bfae;
     transform: translateY(-10px);
 }
 /* ------------------- projects ------------------------ */
@@ -208,7 +208,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgb(0,0,0,0.5), teal);
+    background: linear-gradient(rgb(0,0,0,0.5), #00bfae);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -229,7 +229,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: teal;
+    color: #00bfae;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -249,7 +249,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid teal;
+    border: 1px solid #00bfae;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -257,7 +257,7 @@ nav ul li a:hover::after{
     transition: background 0.5s
 }
 .btn:hover{
-    background: teal;
+    background: #00bfae;
 }
 
 /* ------------------- contact ------------------------ */
@@ -271,7 +271,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: teal;
+    color: #00bfae;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -287,12 +287,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: teal;
+    color: #00bfae;
     transform: translateY(-5px)
 }
 .btn.btn2{
     display: inline-block;
-    background: teal;
+    background: #00bfae;
 }
 .contact-right form{
     width: 100%;
@@ -343,7 +343,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: teal;
+        background: #00bfae;
         position: fixed;
         top: 0;
         right: -200px;
