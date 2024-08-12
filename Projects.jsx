@@ -13,7 +13,7 @@ export default function Projects() {
                     <img src="Assets/work-1.png"/>
                     <div className="layer">
                         <h3>Personal Web page</h3>
-                        <p>My first project is this website on which we are currently on.</p>
+                        <p>My first project is this website on which we are currently on. It is made with React.</p>
                     </div>
                 </div>
                 <div className="work">

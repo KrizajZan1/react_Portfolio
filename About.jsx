@@ -22,7 +22,7 @@ class openedTab extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="about-col-1">
-                            <img src="Assets/user.png" alt="User"/>
+                            <img src="Assets/me.jpg" alt="User"/>
                         </div>
                         <div className="about-col-2">
                             <h1 className="sub-title">About me:</h1>
@@ -45,7 +45,7 @@ class openedTab extends React.Component {
                                 <ul>
                                     <li><span>Creatim</span><br/>At this company I learned more about Web Development. At first they gave me an assignment to create a simple To-do list with just basic HTML CSS and JS. After that they gave me a Vue assignment where I would use an API that displays data about Star Wars characters.
                                     </li>
-                                    <li><span>Caretronic</span><br/>This was my latest necessary practical experience company. At this company I was building and preparing servers, that would later be sent away. So I built them together and then I installed all the software and so on and so forth. Later in my summer vacation I decided to work there as a programmer. And I was working on their website and making it better with some extra features.</li>
+                                    <li><span>Caretronic</span><br/>At this company I was building and preparing servers, that would later be sent away. So I built them together and then I installed all the software and so on and so forth. Later in my summer vacation I decided to work there as a programmer. And I was working on their website and making it better with some extra features. I was programming in .NET</li>
                                     <li><span>SRC Infonet</span><br/>This company was the first company where I started my necessary practical
                                     experience. I was young and also did not recieve much programming assignments however I did learn SQL there.</li>
                                 </ul>
