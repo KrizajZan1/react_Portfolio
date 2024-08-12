@@ -17,18 +17,18 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="work">
-                    <img src="Assets/work-2.png"/>
+                    <img src="Assets/Calculator.png"/>
                     <div className="layer">
                         <h3>Calculator</h3>
-                        <p>I also made a simple working calculator web page. You can take a look at it in the link below.</p>
+                        <p>I also made a simple working calculator web page where you can solve basic equations. You can also look at the history of inputs. Made that with the help of localStorage. You can take a look at it in the link below.</p>
                         <a href="./Projects/calculator/calculator.html" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
                     </div>
                 </div>
                 <div className="work">
-                    <img src="Assets/work-3.png"/>
+                    <img src="Assets/todoList.png"/>
                     <div className="layer">
                         <h3>To-do List</h3>
-                        <p>I also made a To-do List where you can add/remove tasks.You can take a look at it in the link below.</p>
+                        <p>I also made a To-do List where you can add/remove tasks. Task are also movable so you can set the priority and are also saved in localStorage so the next time you refresh or reopen the list stayes untouched.You can take a look at it in the link below.</p>
                         <a href="/Projects/To-do list/index.html" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
                     </div>
                 </div>

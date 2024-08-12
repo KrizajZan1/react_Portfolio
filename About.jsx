@@ -53,9 +53,11 @@ class openedTab extends React.Component {
                             <div className="tab-contents" id="free-time">
                                 <ul>
                                     <li><span>In my free time I like to:</span></li>
-                                    <li>Read books on self development.</li>
-                                    <li>Workout in the gym or playing basketball with friends</li>
-                                    <li>Watching comedy movies/series</li>
+                                    <li>- Workout in the gym</li>
+                                    <li>- Play basketball with friends</li>
+                                    <li>- Read self development books</li>
+                                    <li>- Watch movies or series</li>
+                                    <li>- Learn more about programming</li>
                                 </ul>
                             </div>
                         </div>
