@@ -6,7 +6,7 @@ import { faPython } from '@fortawesome/free-brands-svg-icons';
 
 export default function Specialties() {
   return (
-    <div id="specialties">
+    <div id="specialities">
       <div className="container">
         <h1 className="sub-title">My Specialties</h1>
         <div className="specialties-list">
