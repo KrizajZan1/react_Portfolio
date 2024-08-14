@@ -42,7 +42,7 @@ class openedTab extends React.Component {
                             </div>
                             <div className="tab-contents" id="experience">
                                 <ul>
-                                    <li><span>Creatim</span><br/>During my tenure at Creatim, I enhanced my web development skills through hands-on projects. Initially, I was tasked with creating a basic To-do list application using HTML, CSS, and JavaScript. Subsequently, I undertook a project involving Vue.js, where I integrated an API to display data about Star Wars characters.</li>
+                                    <li><span>Creatim</span><br/>At Creatim, I enhanced my web development skills through hands-on projects. Initially, I was tasked with creating a basic To-do list application using HTML, CSS, and JavaScript. Subsequently, I undertook a project involving Vue.js, where I integrated an API to display data about Star Wars characters.</li>
                                     <li><span>Caretronic</span><br/>At Caretronic, I was responsible for assembling and configuring servers, which were then prepared for deployment. This included installing necessary software and performing system setups. Later, during my summer internship, I transitioned into a programming role where I contributed to enhancing the company’s website by adding new features using .NET technologies.</li>
                                     <li><span>SRC Infonet</span><br/>SRC Infonet was where I began my professional journey, gaining essential practical experience. Although I was relatively new and had limited programming tasks, this role provided me with foundational knowledge in SQL.</li>
                                 </ul>

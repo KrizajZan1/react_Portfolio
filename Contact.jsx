@@ -9,8 +9,8 @@ export default function Contact() {
       <h1 className="sub-title">Contact me:</h1>
       <div id="contact-container">
         <div className="contact-left">
-          <p><i className="fas fa-map-marker-alt"></i>Slovenia</p>
           <p><i className="fas fa-envelope"></i>krizajzan1@gmail.com</p>
+          <p><i className="fas fa-map-marker-alt"></i>Slovenia</p>
           <div className="social-icons">
             <a href="https://github.com/KrizajZan1" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
