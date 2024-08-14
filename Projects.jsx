@@ -13,14 +13,14 @@ export default function Projects() {
                     <img src="Assets/work-1.png"/>
                     <div className="layer">
                         <h3>Personal Web page</h3>
-                        <p>My first project is this website on which we are currently on. It is made with React.</p>
+                        <p>Developed a comprehensive personal website, which serves as the foundation for this portfolio. Built using React, this website showcases my skills and projects with a modern and interactive design.</p>
                     </div>
                 </div>
                 <div className="work">
                     <img src="Assets/Calculator.png"/>
                     <div className="layer">
                         <h3>Calculator</h3>
-                        <p>I also made a simple working calculator web page where you can solve basic equations. You can also look at the history of inputs. Made that with the help of localStorage. You can take a look at it in the link below.</p>
+                        <p>Created a functional web-based calculator capable of solving basic arithmetic operations. Includes a history feature to track previous calculations, utilizing localStorage for persistence. Explore the calculator through the link below.</p>
                         <a href="./Projects/calculator/calculator.html" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ export default function Projects() {
                     <img src="Assets/todoList.png"/>
                     <div className="layer">
                         <h3>To-do List</h3>
-                        <p>I also made a To-do List where you can add/remove tasks. Task are also movable so you can set the priority and are also saved in localStorage so the next time you refresh or reopen the list stayes untouched.You can take a look at it in the link below.</p>
+                        <p>Developed a dynamic to-do list application allowing users to add, remove, and reorder tasks. Features task prioritization and persistent storage using localStorage, ensuring tasks remain intact across sessions. Check out the to-do list via the link below.</p>
                         <a href="/Projects/To-do list/index.html" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ export default function Projects() {
                     <img src="Assets/StarWarsAPI.png"/>
                     <div className="layer">
                         <h3>Star Wars characters</h3>
-                        <p>I also made this website where you can change Star Wars characters data. Website is made with Vue framework</p>
+                        <p>Developed a website for managing Star Wars character data, utilizing the Vue.js framework. This application allows users to view and edit character information, offering an engaging and interactive experience. Access the project via the link below.</p>
                         <a href="/Projects/vueStarWarsAPI/index.html" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
                     </div>
                 </div>

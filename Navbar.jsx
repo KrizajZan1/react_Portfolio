@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,6 +15,10 @@ export default function Navbar() {
       <div className="container">
         <nav>
           <img src="Assets/logo.png" className="logo" alt="Logo" />
+          {/* Dodaj gumb za prenos */}
+          <a href="Assets/CV.png" download className="download-button">
+            <FontAwesomeIcon icon={faDownload} /> CV
+          </a>
           <ul id="sidemenu" className={menuOpen ? "open" : ""}>
             <li><a href="#header" onClick={toggleMenu}>Home</a></li>
             <li><a href="#about" onClick={toggleMenu}>About</a></li>

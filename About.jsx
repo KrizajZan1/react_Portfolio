@@ -22,12 +22,11 @@ class openedTab extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="about-col-1">
-                            <img src="Assets/me.jpg" alt="User"/>
+                            <img src="Assets/me.jpg" alt="Žan Križaj"/>
                         </div>
                         <div className="about-col-2">
                             <h1 className="sub-title">About me:</h1>
-                            <p>I am a 21 year young "adult" from Slovenia. I am finishing my second year at college and I am working on my diplomatic assignment which will be a fittness iOS application, that is why I am currently learning about SwiftUI.
-                            </p>
+                            <p>I am a 21-year-old from Slovenia, currently finish my second year of college. I am working on a diplomatic assignment focused on developing a fitness application for iOS, which has led me to delve into SwiftUI for the first time.</p>
 
                             <div className="tab-titles">
                                 <p className="tab-links active-link" onClick={() => this.opentab('education')}>Education</p>
@@ -43,11 +42,9 @@ class openedTab extends React.Component {
                             </div>
                             <div className="tab-contents" id="experience">
                                 <ul>
-                                    <li><span>Creatim</span><br/>At this company I learned more about Web Development. At first they gave me an assignment to create a simple To-do list with just basic HTML CSS and JS. After that they gave me a Vue assignment where I would use an API that displays data about Star Wars characters.
-                                    </li>
-                                    <li><span>Caretronic</span><br/>At this company I was building and preparing servers, that would later be sent away. So I built them together and then I installed all the software and so on and so forth. Later in my summer vacation I decided to work there as a programmer. And I was working on their website and making it better with some extra features. I was programming in .NET</li>
-                                    <li><span>SRC Infonet</span><br/>This company was the first company where I started my necessary practical
-                                    experience. I was young and also did not recieve much programming assignments however I did learn SQL there.</li>
+                                    <li><span>Creatim</span><br/>During my tenure at Creatim, I enhanced my web development skills through hands-on projects. Initially, I was tasked with creating a basic To-do list application using HTML, CSS, and JavaScript. Subsequently, I undertook a project involving Vue.js, where I integrated an API to display data about Star Wars characters.</li>
+                                    <li><span>Caretronic</span><br/>At Caretronic, I was responsible for assembling and configuring servers, which were then prepared for deployment. This included installing necessary software and performing system setups. Later, during my summer internship, I transitioned into a programming role where I contributed to enhancing the company’s website by adding new features using .NET technologies.</li>
+                                    <li><span>SRC Infonet</span><br/>SRC Infonet was where I began my professional journey, gaining essential practical experience. Although I was relatively new and had limited programming tasks, this role provided me with foundational knowledge in SQL.</li>
                                 </ul>
                             </div>
                             <div className="tab-contents" id="free-time">

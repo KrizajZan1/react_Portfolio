@@ -69,6 +69,28 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #00bfae;
 }
+
+/* styles.css */
+
+/* Slog za gumb za prenos */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: 1px solid #00bfae;
+    border-radius: 6px;
+    background-color: #00bfae;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .download-button:hover {
+    background-color: #fff;
+    color: #00bfae;
+  }
+  
 /* ----------------about----------------- */
 #about {
     padding: 80px 0;
@@ -185,50 +207,68 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 /* ------------------- projects ------------------------ */
-#projects{
+#projects {
     padding: 50px 0;
 }
-.work-list{
+
+.work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work{
+
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-.work img{
+
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition: transform 0.5s;
+    transition: transform 0.3s ease;
 }
-.layer{
+
+.layer {
     width: 100%;
-    height: 0;
-    background: linear-gradient(rgb(0,0,0,0.5), #00bfae);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
-.layer h3{
+
+.work:hover {
+    transform: scale(1.05); /* Rahlo povečanje */
+    filter: brightness(0.8); /* Zameglitev ozadja */
+}
+
+.work:hover img {
+    transform: scale(1.03); /* Rahlo povečanje slike ob hoveru */
+}
+
+.work:hover .layer {
+    opacity: 1; /* Pokaži layer ob hoveru */
+}
+
+.layer h3 {
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.layer a{
-    margin-top: 20px;
+
+.layer a {
+    margin-top: 10px;
     color: #00bfae;
     text-decoration: none;
     font-size: 18px;
@@ -239,12 +279,7 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
+
 .btn{
     display: block;
     margin: 50px auto;
@@ -259,7 +294,6 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #00bfae;
 }
-
 /* ------------------- contact ------------------------ */
 #contact {
     padding-top: 20px; /* Ali prilagodite po potrebi */
@@ -297,7 +331,8 @@ nav ul li a:hover::after{
 .social-icons a {
     text-decoration: none;
     font-size: 30px;
-    margin-right: 20px; /* Povečajte razmik med ikonami */
+    padding-left: 14px;
+    margin-right: 10px; /* Povečajte razmik med ikonami */
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;

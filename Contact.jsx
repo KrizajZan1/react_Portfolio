@@ -12,10 +12,10 @@ export default function Contact() {
           <p><i className="fas fa-map-marker-alt"></i>Slovenia</p>
           <p><i className="fas fa-envelope"></i>krizajzan1@gmail.com</p>
           <div className="social-icons">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/KrizajZan1" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/žan-križaj-b04a11239/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
