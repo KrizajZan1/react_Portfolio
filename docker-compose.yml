@@ -1,0 +1,7 @@
+services:
+  krizajzan_com:
+    build: .
+    container_name: krizajzan_com
+    restart: unless-stopped
+    ports:
+      - 6921:6921
