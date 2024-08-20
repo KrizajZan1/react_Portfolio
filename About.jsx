@@ -26,7 +26,7 @@ class openedTab extends React.Component {
                         </div>
                         <div className="about-col-2">
                             <h1 className="sub-title">About me:</h1>
-                            <p>I am a 21-year-old from Slovenia, currently finish my second year of college. I am working on a diplomatic assignment focused on developing a fitness application for iOS, which has led me to delve into SwiftUI for the first time.</p>
+                            <p>I am a 21-year-old from Slovenia, currently finishing my second year of college. I am working on a diplomatic assignment focused on developing a fitness application for iOS, which has led me to delve into SwiftUI for the first time.</p>
 
                             <div className="tab-titles">
                                 <p className="tab-links active-link" onClick={() => this.opentab('education')}>Education</p>
