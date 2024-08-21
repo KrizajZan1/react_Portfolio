@@ -12,6 +12,6 @@ ENV PORT=6921
 
 EXPOSE 6921
 
-RUN npm run build
+RUN npm run dev
 
 CMD ["npm", "run", "serve"]
