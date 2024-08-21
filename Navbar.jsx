@@ -14,7 +14,6 @@ export default function Navbar() {
     <div id="header">
       <div className="container">
         <nav>
-          <img src="Assets/logo.png" alt="logo" id="logo" />
           {/* Dodaj gumb za prenos */}
           <a href="Assets/CV.png" download className="download-button">
             <FontAwesomeIcon icon={faDownload} /> CV
