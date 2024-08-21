@@ -1,48 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+body {
     background: #080808;
     color: #fff;
 }
-#header{
+#header {
     width: 100%;
     height: 100vh;
-    /*background-image: url(Assets/background.png);*/
-    background-size: cover;
-    background-position: center;
+    position: relative; /* Omogoči, da se elementi znotraj pozicionirajo relativno */
 }
-
-nav{
+/* Slog za navigacijo */
+nav {
+    position: absolute; /* Postavi navigacijo nad pozadinsko sliko */
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 20px; /* Dodaj nekaj prostora okoli vsebine */
+    background: transparent; /* Nastavi ozadje na transparentno */
+    z-index: 10; /* Poskrbi, da bo navigacija vedno na vrhu */
 }
-
-.logo{
+.logo {
     width: 140px;
 }
-
-nav ul li{
+/* Slog za navigacijski meni */
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -52,24 +58,24 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
+.header-text {
+    position: absolute; 
+    top: 50%; 
+    transform: translateX(0); 
+    text-align: left; 
+    color: #fff;
+    width: 80%; 
 }
-.header-text h1{
+.header-text h1 {
     font-size: 60px;
-    margin-top: 20px;
+    margin: 0; /* Odstrani privzete margine */
 }
-.header-text h1 span{
+.header-text h1 span {
     color: #00bfae;
 }
-
-/* styles.css */
-
-/* Slog za gumb za prenos */
 .download-button {
     display: inline-block;
     padding: 10px 20px;
@@ -81,13 +87,11 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .download-button:hover {
+}
+.download-button:hover {
     background-color: #fff;
     color: #00bfae;
-  }
-  
+}
 /* ----------------about----------------- */
 #about {
     padding: 80px 0;
