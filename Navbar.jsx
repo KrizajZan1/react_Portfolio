@@ -12,6 +12,7 @@ export default function Navbar() {
 
   return (
     <div id="header">
+      <img src="Assets/background.png" alt="background" id="header"/>
       <div className="container">
         <nav>
           <img src="Assets/logo.png" className="logo" alt="Logo" />
