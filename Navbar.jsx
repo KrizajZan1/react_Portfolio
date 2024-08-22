@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <div id="header">
-      <img src="Assets/me.jpg" />
+      <img src="Assets/me.jpg" id="header"/>
       <div className="container">
         <nav>
           <a href="Assets/CV.png" download className="download-button">
