@@ -36,8 +36,8 @@ class openedTab extends React.Component {
                             <div className="tab-contents active-tab" id="education">
                                 <ul>
                                     <li><a href="https://sckr.si/vss/" target='_blank'><span>2022 - 2024</span><br/>Višja tehniška šola Kranj</a></li>
-                                    <li><a href="https://sckr.si/sts/" target='_blank'><span>2016 - 2021</span><br/>Srednja tehniška šola Kranj</a></li>
-                                    <li><a href="https://www.osorehek.si/" target='_blank'><span>2020 - 2011</span><br/>OŠ Orehek Kranj</a></li>
+                                    <li><a href="https://sckr.si/sts/" target='_blank'><span>2017 - 2022</span><br/>Srednja tehniška šola Kranj</a></li>
+                                    <li><a href="https://www.osorehek.si/" target='_blank'><span>2008 - 2017</span><br/>OŠ Orehek Kranj</a></li>
                                 </ul>
                             </div>
                             <div className="tab-contents" id="experience">

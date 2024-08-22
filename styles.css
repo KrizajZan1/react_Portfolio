@@ -14,9 +14,6 @@ body {
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./Assets/background.png);
-    background-size: cover;
-    background-position: center;
 }
 /* Slog za navigacijo */
 nav {
@@ -31,9 +28,7 @@ nav {
     background: transparent; /* Nastavi ozadje na transparentno */
     z-index: 10; /* Poskrbi, da bo navigacija vedno na vrhu */
 }
-.logo {
-    width: 140px;
-}
+
 /* Slog za navigacijski meni */
 nav ul {
     display: flex;
@@ -235,6 +230,7 @@ nav ul li a:hover::after {
     transition: transform 0.3s ease;
 }
 
+/* Glavni slog za sloj nad projektno sliko */
 .layer {
     width: 100%;
     height: 100%;
@@ -252,36 +248,34 @@ nav ul li a:hover::after {
     transition: opacity 0.3s ease;
 }
 
-.work:hover {
-    transform: scale(1.05); /* Rahlo povečanje */
-    filter: brightness(0.8); /* Zameglitev ozadja */
-}
-
-.work:hover img {
-    transform: scale(1.03); /* Rahlo povečanje slike ob hoveru */
-}
-
 .work:hover .layer {
-    opacity: 1; /* Pokaži layer ob hoveru */
+    opacity: 1;
 }
 
 .layer h3 {
     font-weight: 500;
     margin-bottom: 10px;
-}
-
-.layer a {
-    margin-top: 10px;
-    color: #00bfae;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     text-align: center;
 }
+
+/* Slog za ikone v sloju */
+.layer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Razmik med ikonami */
+}
+
+.layer .icons a {
+    color: #00bfae;
+    font-size: 30px; /* Velikost ikon */
+    transition: color 0.3s, transform 0.3s; /* Animacija ob hoveru */
+}
+
+.layer .icons a:hover {
+    color: #fff;
+    transform: scale(1.2); /* Povečava ikone ob hoveru */
+}
+
 
 .btn{
     display: block;
@@ -491,16 +485,11 @@ form .btn {
       justify-content: space-between;
     }
   
-    .logo {
-      max-width: 100px; /* Prilagodite velikost logotipa, če je prevelik */
-    }
-  
     nav ul li a {
       font-size: 18px;
       white-space: nowrap; /* Prepreči prelome vrstic v navigaciji */
     }
   
-    /* Preprečimo, da bi se navigacijski meni premaknil pod logotip */
     nav ul {
       flex-grow: 1;
       justify-content: flex-end;

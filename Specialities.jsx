@@ -8,7 +8,7 @@ export default function Specialties() {
   return (
     <div id="specialities">
       <div className="container">
-        <h1 className="sub-title">My Specialties</h1>
+        <h1 className="sub-title">My Specialties:</h1>
         <div className="specialties-list">
           <div>
             <h2><FontAwesomeIcon icon={faGlobe} /> Web Development</h2>
