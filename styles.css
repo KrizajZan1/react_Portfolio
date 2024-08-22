@@ -58,6 +58,18 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .header-text {
     position: absolute; 
     top: 50%; 
@@ -68,7 +80,8 @@ nav ul li a:hover::after {
 }
 .header-text h1 {
     font-size: 60px;
-    margin: 0; /* Odstrani privzete margine */
+    padding-left: 40%; 
+    animation: wave 2s ease-in-out infinite;
 }
 .header-text h1 span {
     color: #00bfae;
@@ -271,7 +284,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #080808;
     width: 60px;
     height: 60px;
     border-radius: 50%;
