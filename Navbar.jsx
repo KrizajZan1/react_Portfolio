@@ -12,6 +12,7 @@ export default function Navbar() {
 
   return (
     <div id="header">
+      <img src="Assets/me.jpg" />
       <div className="container">
         <nav>
           <a href="Assets/CV.png" download className="download-button">

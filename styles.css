@@ -457,9 +457,6 @@ form .btn {
 /* ------------------- Responsive Styling ------------------------ */
 /* Burger meni in zapiranje menija */
 @media only screen and (max-width: 600px) {
-    .header-text h1 {
-        font-size: 40px; /* Dodatno zmanjša velikost pisave */
-    }
     nav ul {
       position: fixed;
       top: 0;
@@ -494,10 +491,6 @@ form .btn {
   
   /* Na večjih zaslonih prikaži originalni meni in skrij burger ikono */
   @media (min-width: 601px) {
-    .header-text h1 {
-        font-size: 30px; /* Dodatno zmanjša velikost pisave */
-    }
-
     .menu-icon {
       display: none;
     }
