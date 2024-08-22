@@ -277,6 +277,22 @@ nav ul li a:hover::after {
     border-radius: 50%;
     text-align: center;
 }
+.layer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Razmik med ikonami */
+}
+
+.layer .icons a {
+    color: #00bfae;
+    font-size: 30px; /* Velikost ikon */
+    transition: color 0.3s, transform 0.3s; /* Animacija ob hoveru */
+}
+
+.layer .icons a:hover {
+    color: #fff;
+    transform: scale(1.2); /* Povečava ikone ob hoveru */
+}
 
 .btn{
     display: block;

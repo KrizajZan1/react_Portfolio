@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faDownload } from '@fortawesome/free-solid-svg-icons';
-import backgroundImage from './Assets/background.png'; // Uvoz slike
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +12,6 @@ export default function Navbar() {
 
   return (
     <div id="header">
-      <img src={backgroundImage} alt="background image" className="background-image" />
       <div className="container">
         <nav>
           <a href="Assets/CV.png" download className="download-button">
