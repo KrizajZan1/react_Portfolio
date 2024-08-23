@@ -391,10 +391,6 @@ form .btn {
 
 /* Mobilni telefoni - do 480px */
 @media only screen and (max-width: 480px) {
-    body {
-        background: #080808;
-        color: #fff;
-    }
     nav ul {
         position: fixed;
         top: 0;
@@ -433,9 +429,10 @@ form .btn {
 
     .header-text {
         position: absolute;
-        top: 10%; /* Premaknite besedilo še nekoliko nižje */
+        top: 0%; /* Premaknite besedilo še nekoliko nižje */
         transform: translateX(0);
         text-align: left;
+        background: #080808;
         color: #fff;
         width: 80%;
         margin-left: 20px;
@@ -461,7 +458,7 @@ form .btn {
     #header img {
         width: 100%; /* Širina slike ostane 100%, vendar sliko prilagajamo z drugimi lastnostmi */
         height: 100%; /* Ohranimo razmerje slike */
-        margin-top: 500px; /* Odstranite zgornji prostor */
+        margin-top: 300px; /* Odstranite zgornji prostor */
     }
 
     .download-button{
