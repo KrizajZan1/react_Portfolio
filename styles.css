@@ -459,6 +459,7 @@ form .btn {
         width: 100%; /* Širina slike ostane 100%, vendar sliko prilagajamo z drugimi lastnostmi */
         height: 100%; /* Ohranimo razmerje slike */
         margin-top: 300px; /* Odstranite zgornji prostor */
+        background: transparent;
     }
 
     .download-button{
