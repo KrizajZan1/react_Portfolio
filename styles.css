@@ -388,49 +388,24 @@ form .btn {
 }
 
 /* Prilagoditve za majhne zaslone */
+
 /* Mobilni telefoni - do 480px */
 @media only screen and (max-width: 480px) {
-    .header-text h1 {
-        font-size: 36px;
-    }
-
-    .sub-title {
-        font-size: 30px;
-    }
-
-    .tab-links {
-        font-size: 14px;
-    }
-
-    .specialties-list div h2 {
-        font-size: 20px;
-    }
-
-    .work-list {
-        grid-template-columns: 1fr;
-    }
-
-    form input, form textarea {
-        font-size: 16px;
-    }
-
-    .btn {
-        padding: 10px 30px;
-    }
-
     nav ul {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 100%;
+        width: auto; /* Nastavi širino na auto, da se prilega vsebini */
+        max-width: 80%; /* Omeji širino menija na 80% širine zaslona */
         height: 100vh;
         background: #262626;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         transition: right 0.5s;
         z-index: 1000;
+        padding: 20px; /* Dodaj nekaj prostora okoli vsebine */
     }
 
     nav ul.open {
@@ -450,6 +425,113 @@ form .btn {
         position: absolute;
         top: 20px;
         right: 20px;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 10%; /* Premaknite besedilo še nekoliko nižje */
+        transform: translateX(0);
+        text-align: left;
+        color: #fff;
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 0; /* Odstranite dodatni prostor spodaj */
+    }
+
+    .header-text h1, h1 span{
+        font-size: 30px; /* Zmanjšaj velikost naslova */
+        margin-top: 150px;
+    }
+
+    .sub-title {
+        font-size: 30px; /* Zmanjšaj velikost naslovov */
+        margin: 0 auto; /* Centeriraj naslov */
+        padding: 0 20px; /* Dodaj prostor med robom zaslona in naslovom */
+    }
+
+    #header {
+        height: auto; /* Omogoči, da se višina prilagodi vsebini */
+        padding: 0; /* Odstrani dodatni padding */
+    }
+
+    #header img {
+        width: 100%; /* Širina slike ostane 100%, vendar sliko prilagajamo z drugimi lastnostmi */
+        height: 100%; /* Ohranimo razmerje slike */
+        margin-top: 500px; /* Odstranite zgornji prostor */
+    }
+
+    .download-button{
+        margin-left: 0;
+    }
+
+    #about {
+        padding: 50px 0; /* Zmanjšajte padding zgoraj in spodaj */
+        margin-top: 10px; /* Dodajte manjši margin zgoraj */
+    }
+    .about-col-1{
+        display: none;
+    }
+
+    #specialties {
+        padding: 30px 20px; /* Dodaj prostor ob straneh */
+    }
+    
+    .specialties-list {
+        padding: 0 20px; /* Dodaj horizontalni prostor */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 30px; /* Zmanjšajte zgornji prostor */
+    }
+
+    #projects {
+        padding: 50px 15px; /* Dodaj prostor ob straneh */
+    }
+    
+    .work-list {
+        padding: 0 20px; /* Dodaj horizontalni prostor */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 30px; /* Zmanjšajte zgornji prostor */
+    }
+    
+    #contact-container {
+        display: flex;
+        flex-direction: column; /* Prilagodi za manjše zaslone */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .contact-left, .contact-right {
+        flex-basis: auto;
+        width: 100%;
+    }
+    
+    .contact-left {
+        margin-bottom: 20px; /* Dodaj prostor spodaj za manjše zaslone */
+    }
+    
+    .contact-left p i {
+        color: #00bfae;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    
+    .social-icons {
+        margin-top: 20px; /* Dodaj manjši prostor zgoraj */
+    }
+    
+    form input, form textarea {
+        width: calc(100% - 30px); /* Dodaj prostor ob straneh */
+        margin: 15px auto;
+    }
+    
+    form .btn {
+        padding: 14px 30px; /* Prilagodi velikost gumba */
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
     }
 }
 
