@@ -621,3 +621,20 @@ form .btn {
         display: none;
     }
 }
+
+/* Header tekst animation */
+@keyframes slide-up-down {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px); /* Premakni navzdol */
+    }
+    100% {
+        transform: translateY(-20px); /* Vrni nazaj na začetni položaj */
+    }
+}
+
+.header-text h1 {
+    animation: slide-up-down 2s ease-in-out infinite;
+}
