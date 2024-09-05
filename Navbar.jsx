@@ -37,7 +37,7 @@ export default function Navbar() {
       <img src="Assets/background.png" id="header"/>
       <div className="container">
         <nav>
-          <a href="Assets/CV.png" download className="download-button">
+          <a href="Assets/CV_ZanKrizaj_SLO.docx" download className="download-button">
             <FontAwesomeIcon icon={faDownload} /> CV
           </a>
           <ul
