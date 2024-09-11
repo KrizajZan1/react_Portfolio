@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #080808;
+    display: flex;
+    flex-direction: column; /* Dodano za centriranje naslova */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-title {
+    color: #00bfae;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calculator-wrapper {
+    display: flex;
+    background: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(0, 191, 174, 0.2), 5px 5px 15px rgba(0, 191, 174, 0.5);
+    gap: 20px;
+}
+
+.calculator {
+    padding: 20px;
+    background: #333333;
+    border-radius: 10px;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator form .display input {
+    border: none;
+    background: #262626;
+    color: #ffffff;
+    font-size: 36px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 20px;
+    width: 280px; /* Zmanjšana širina vnosnega polja */
+}
+
+.calculator form .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+}
+
+.calculator form input[type="button"] {
+    border: none;
+    background: #444444;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.calculator form input[type="button"]:hover {
+    background: #00bfae;
+    transform: translateY(-3px);
+}
+
+.calculator form input.equal {
+    grid-column: span 2;
+    background: #00bfae;
+    color: #ffffff;
+}
+
+.calculator form input.equal:hover {
+    background: #009f90;
+}
+
+.history {
+    margin-top: 20px; /* Dodan razmik zgoraj med kalkulatorjem in zgodovino */
+    padding: 20px;
+    background: #333333;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.history h2 {
+    margin-bottom: 10px;
+    color: #00bfae;
+    text-align: center;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.history ul li {
+    background: #444444;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.clear-history-btn {
+    border: none;
+    background: #ff4d4d;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.clear-history-btn:hover {
+    background: #e60000;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .calculator-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculator form input {
+        width: 70px; /* Povečana širina gumbov */
+        height: 70px;
+        font-size: 22px;
+        margin: 5px;
+    }
+
+    form .display input {
+        font-size: 32px; /* Povečana velikost pisave */
+        width: 320px; /* Povečana širina vnosnega polja */
+    }
+
+    form input.equal {
+        width: 140px; /* Povečana širina za "=" gumb */
+    }
+
+    .history {
+        width: 320px; /* Povečana širina zgodovine na širino kalkulatorja */
+    }
+
+    .history h2 {
+        font-size: 20px;
+    }
+
+    .history ul li {
+        font-size: 16px;
+    }
+
+    .clear-history-btn {
+        font-size: 14px;
+    }
+}

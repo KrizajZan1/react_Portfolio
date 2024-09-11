@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Importing Nunito font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Task List</title>
+
+    <!-- Linking CSS with HTML-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Importing sortable library for moving tasks? -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+  </head>
+  <body>
+    <div class="todolist">
+      <div class="greetings">
+        <h1>To-do List</h1>
+        <p>Write your new task in the field below.</p>
+      </div>
+
+      <div class="input">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter task"
+          onkeypress="enter(event)"
+        />
+        <button id="addTask" onclick="addTask()">Add Task</button>
+      </div>
+
+      <div class="activeTasks">
+        <h1>Tasks to complete:</h1>
+        <ul id="activeTasks"></ul>
+      </div>
+
+      <div class="completedTasks">
+        <h1>Already completed tasks:</h1>
+        <ul id="completedTasks"></ul>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

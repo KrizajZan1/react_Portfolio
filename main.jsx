@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Navbar from './Navbar'
-import About from './About'
-import Specialities from './Specialities'
-import Projects from './Projects'
-import Contact from './Contact'
+import Navbar from './src/components/Navbar'
+import About from './src/components/About'
+import Specialities from './src/components/Specialities'
+import Projects from './src/components/Projects'
+import Contact from './src/components/Contact'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
