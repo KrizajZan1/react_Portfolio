@@ -5,6 +5,7 @@ import About from './src/components/About'
 import Specialities from './src/components/Specialities'
 import Projects from './src/components/Projects'
 import Contact from './src/components/Contact'
+import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
