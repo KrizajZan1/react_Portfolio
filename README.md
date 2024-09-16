@@ -15,12 +15,6 @@ This is a personal portfolio website to showcase my projects, skills, and work e
 - JavaScript
 - React.js
 
-## Installation and Setup
-1. Clone the repository: `git clone https://github.com/username/portfolio-website.git`
-2. Install the required dependencies: `npm install`
-3. Run the development server: `npm start`
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
 ## File Structure
 - `src/` – source files (components, styles, images)
 - `public/` – static files (favicon, index.html)
