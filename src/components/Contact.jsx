@@ -29,9 +29,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      <div id="copyright">
-        &copy; 2024 Žan Križaj. All rights reserved.
-      </div>
+
     </div>
   );
 }

@@ -1,68 +1,71 @@
-import React from 'react';
-import "../styles/about.css"
+import React, { useState } from "react";
+import "../styles/about.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-class openedTab extends React.Component {
-    opentab = (tabname) => {
-        const tablinks = document.getElementsByClassName("tab-links");
-        const tabcontents = document.getElementsByClassName("tab-contents");
+export default function About() {
+  const [showContactInfo, setShowContactInfo] = useState(false);
 
-        for (let tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (let tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+  // Funkcija za prenos CV-ja
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "src/assets/CV_ZanKrizaj_SLO.docx";
+    link.download = "CV_ZanKrizaj_SLO.docx";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  // Funkcija za odpiranje/zapiranje kontaktnih informacij
+  const toggleContactInfo = () => {
+    setShowContactInfo(!showContactInfo);
+
+    // Blokiraj premikanje po strani, ko je modal odprt
+    if (!showContactInfo) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
     }
+  };
 
-    render() {
-        return (
-            <div id="about">
-                <div className="container">
-                    <div className="row">
-                        <div className="about-col-1">
-                            <img src="src/assets/user.png" alt="Žan Križaj"/>
-                        </div>
-                        <div className="about-col-2">
-                            <h1 className="sub-title">About me:</h1>
-                            <p>I am a 21-year-old from Slovenia, currently finishing my second year of college. I am working on a diplomatic assignment focused on developing a fitness application for iOS, which has led me to delve into SwiftUI for the first time.</p>
+  return (
+    <section id="about" className="about">
+      <div className="about-content">
+        <img src="src/assets/me.jpg" alt="Your profile" className="profile-image" />
+        <div>
+          <h2>Hello, I'm Žan Križaj</h2>
+          <p>Aspiring Frontend Developer</p>
+          <div className="about-buttons">
+            <button className="btn" onClick={downloadCV}>
+              Download CV
+            </button>
+            <button className="btn" onClick={toggleContactInfo}>
+              Contact Info
+            </button>
+          </div>
+          <div className="social-icons">
+            <a href="https://www.linkedin.com/in/%C5%BEan-kri%C5%BEaj-b04a11239/" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            </a>
+            <a href="https://github.com/KrizajZan1" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faGithub} className="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
 
-                            <div className="tab-titles">
-                                <p className="tab-links active-link" onClick={() => this.opentab('education')}>Education</p>
-                                <p className="tab-links" onClick={() => this.opentab('experience')}>Experience</p>
-                                <p className="tab-links" onClick={() => this.opentab('free-time')}>Free time</p>
-                            </div>
-                            <div className="tab-contents active-tab" id="education">
-                                <ul>
-                                    <li><a href="https://sckr.si/vss/" target='_blank'><span>2022 - 2024</span><br/>Višja tehniška šola Kranj</a></li>
-                                    <li><a href="https://sckr.si/sts/" target='_blank'><span>2017 - 2022</span><br/>Srednja tehniška šola Kranj</a></li>
-                                    <li><a href="https://www.osorehek.si/" target='_blank'><span>2008 - 2017</span><br/>OŠ Orehek Kranj</a></li>
-                                </ul>
-                            </div>
-                            <div className="tab-contents" id="experience">
-                                <ul>
-                                    <li><span>Creatim</span><br/>At Creatim, I enhanced my web development skills through hands-on projects. Initially, I was tasked with creating a basic To-do list application using HTML, CSS, and JavaScript. Subsequently, I undertook a project involving Vue.js, where I integrated an API to display data about Star Wars characters.</li>
-                                    <li><span>Caretronic</span><br/>At Caretronic, I was responsible for assembling and configuring servers, which were then prepared for deployment. This included installing necessary software and performing system setups. Later, during my summer internship, I transitioned into a programming role where I contributed to enhancing the company’s website by adding new features using .NET technologies.</li>
-                                    <li><span>SRC Infonet</span><br/>SRC Infonet was where I began my professional journey, gaining essential practical experience. Although I was relatively new and had limited programming tasks, this role provided me with foundational knowledge in SQL.</li>
-                                </ul>
-                            </div>
-                            <div className="tab-contents" id="free-time">
-                                <ul>
-                                    <li><span>In my free time I like to:</span></li>
-                                    <li>- Workout in the gym</li>
-                                    <li>- Play basketball with friends</li>
-                                    <li>- Read self development books</li>
-                                    <li>- Watch movies or series</li>
-                                    <li>- Learn more about programming</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+      {/* Kontaktne informacije modal */}
+      {showContactInfo && (
+        <div className="contact-info-modal">
+          <div className="contact-info-content">
+            <h3>Contact Information: </h3>
+            <p>Email: krizajzan1@gmail.com</p>
+            <button className="btn close-btn" onClick={toggleContactInfo}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </section>
+  );
 }
-
-export default openedTab;

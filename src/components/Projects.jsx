@@ -1,55 +1,40 @@
-import React from "react"
-import "../styles/projects.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import React from 'react';
+import '../styles/Projects.css';
 
 export default function Projects() {
-  return <div id="projects">
-    <div className="container">
-            <h1 className="sub-title">My projects:</h1>
-            <div className="work-list">
-                <div className="work">
-                    <img src="../src/assets/work-1.png"/>
-                    <div className="layer">
-                        <h3>Personal Web page</h3>
-                        <p>Developed a comprehensive personal website, which serves as the foundation for this portfolio. Built using React, this website showcases my skills and projects with a modern and interactive design.</p>
-                    </div>
-                </div>
-                <div className="work">
-                    <img src="../src/assets/Calculator.png"/>
-                    <div className="layer">
-                        <h3>Calculator</h3>
-                        <p>Created a functional web-based calculator capable of solving basic arithmetic operations. Includes a history feature to track previous calculations, utilizing localStorage for persistence. Explore the calculator through the link below.</p>
-                        <div className="icons">
-                            <a href="src/projects/calculator/calculator.html" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
-                            <a href="https://github.com/KrizajZan1/Calculator" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
-                        </div>
-                    </div>
-                </div>
-                <div className="work">
-                    <img src="../src/assets/todoList.png"/>
-                    <div className="layer">
-                        <h3>To-do List</h3>
-                        <p>Developed a dynamic to-do list application allowing users to add, remove, and reorder tasks. Features task prioritization and persistent storage using localStorage, ensuring tasks remain intact across sessions. Check out the to-do list via the link below.</p>
-                        <div className="icons">
-                            <a href="src/projects/To-do list/index.html" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
-                            <a href="https://github.com/KrizajZan1/todoList" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
-                        </div>
-                    </div>
-                </div>
-                <div className="work">
-                    <img src="../src/assets/StarWarsAPI.png"/>
-                    <div className="layer">
-                        <h3>Star Wars characters</h3>
-                        <p>Developed a website for managing Star Wars character data, utilizing the Vue.js framework. This application allows users to view and edit character information, offering an engaging and interactive experience. Access the project via the link below.</p>
-                        <div className="icons">
-                            <a href="https://github.com/KrizajZan1/vueStarWarsAPI" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section id="projects" className="projects">
+      <h2>Browse My Recent <span>Projects</span></h2>
+
+      <div className="projects-container">
+        <div className="project-card">
+          <img src='src/assets/todoList.png' alt="Project One" className="project-image" />
+          <h3>To-do List</h3>
+          <p>Developed simple To-do list website with HTML, CSS, JavaScript where user can add tasks which are saved with localStorage. You can check the page via link below</p>
+          <div className="project-buttons">
+            <button className="btn">GitHub</button>
+            <button className="btn">Live Demo</button>
+          </div>
         </div>
-  </div>
+        <div className="project-card">
+          <img src='src/assets/Calculator.png' alt="Project Two" className="project-image" />
+          <h3>Calculator</h3>
+          <p>Developed a simple calculator website with HTML, CSS and JavaScript. You can check the page via link below</p>
+          <div className="project-buttons">
+            <button className="btn">GitHub</button>
+            <button className="btn">Live Demo</button>
+          </div>
+        </div>
+        <div className="project-card">
+          <img src='src/assets/StarWarsAPI.png' alt="Project Three" className="project-image" />
+          <h3>Vue Star Wars API</h3>
+          <p>Developed website with Vue.js that fetches data from SWAPI and displays it. It also allows user to change the data and it is saved in localStorage. You can check the page via link below</p>
+          <div className="project-buttons">
+            <button className="btn">GitHub</button>
+            <button className="btn">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

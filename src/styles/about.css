@@ -1,82 +1,115 @@
-/* ----------------about----------------- */
-#about {
-    padding: 80px 0;
-    color: #fff;
-}
-
-#about a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.row {
+.about-content {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-
-.about-col-1 {
-    flex-basis: 35%;
-}
-
-.about-col-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.about-col-2 {
-    flex-basis: 60%;
-}
-
-.sub-title {
-    font-size: 60px;
-    font-weight: 600;
-    color: #00bfae;
-}
-
-.tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-.tab-links {
+  
+.profile-image {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
     margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
+}
+  
+.about-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.about-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+  
+.about-buttons .btn {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
-    position: relative;
+    transition: background-color 0.3s;
 }
-
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #00bfae;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
+  
+.about-buttons .btn:hover {
+    background-color: #555;
 }
-
-.tab-links.active-link::after,
-.tab-links:hover::after { 
-    width: 50%;
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
 }
-
-.tab-contents ul li {
-    list-style: none;
+  
+.social-icons a {
+    font-size: 2em;
+    color: #333;
+    transition: color 0.3s;
+}
+  
+.social-icons a:hover {
+    color: #0077b5; 
+}
+  
+  /* Stil za kontaktne informacije modal */
+.contact-info-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    width: 400px;
+}
+  
+.contact-info-content {
+    text-align: center;
+}
+  
+.contact-info-content h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+  
+.contact-info-content p {
     margin: 10px 0;
 }
-
-.tab-contents ul li span {
-    color: #00bfae;
-    font-size: 14px;
+  
+.close-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.close-btn:hover {
+    background-color: #444;
 }
 
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
+  /* Overlay da zatemni ozadje, ko je modal odprt */
+.contact-info-modal::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
