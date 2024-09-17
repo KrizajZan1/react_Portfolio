@@ -5,6 +5,7 @@ import About from './src/components/About'
 import AboutMe from './src/components/AboutMe'
 import Experience from './src/components/Skills'
 import Projects from './src/components/Projects'
+import ScrollToTop from './src/components/ScrollToTop'
 import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <div id="copyright">
           &copy; 2024 Žan Križaj. All rights reserved.
         </div>
-      </footer>
+    </footer>
+    <ScrollToTop />
   </React.StrictMode>,
 )

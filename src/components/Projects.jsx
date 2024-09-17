@@ -12,8 +12,12 @@ export default function Projects() {
           <h3>To-do List</h3>
           <p>Developed simple To-do list website with HTML, CSS, JavaScript where user can add tasks which are saved with localStorage. You can check the page via link below</p>
           <div className="project-buttons">
-            <button className="btn">GitHub</button>
-            <button className="btn">Live Demo</button>
+            <a href='https://github.com/KrizajZan1/todoList' target='blank'>
+              <button className="btn">GitHub</button>
+              </a>
+              <a href='src/projects/To-do list/index.html' target='blank'>
+              <button className="btn">Live Demo</button>
+              </a>
           </div>
         </div>
         <div className="project-card">
@@ -21,8 +25,12 @@ export default function Projects() {
           <h3>Calculator</h3>
           <p>Developed a simple calculator website with HTML, CSS and JavaScript. You can check the page via link below</p>
           <div className="project-buttons">
+            <a href='https://github.com/KrizajZan1/Calculator' target='blank'>
             <button className="btn">GitHub</button>
+            </a>
+            <a href='src/projects/calculator/calculator.html' target='blank'>
             <button className="btn">Live Demo</button>
+            </a>
           </div>
         </div>
         <div className="project-card">
@@ -30,8 +38,9 @@ export default function Projects() {
           <h3>Vue Star Wars API</h3>
           <p>Developed website with Vue.js that fetches data from SWAPI and displays it. It also allows user to change the data and it is saved in localStorage. You can check the page via link below</p>
           <div className="project-buttons">
+          <a href='https://github.com/KrizajZan1/vueStarWarsAPI' target='blank'>
             <button className="btn">GitHub</button>
-            <button className="btn">Live Demo</button>
+            </a>
           </div>
         </div>
       </div>
