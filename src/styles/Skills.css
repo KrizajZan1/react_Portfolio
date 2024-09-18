@@ -23,7 +23,7 @@
 
 .experience-card {
   background-color: #fff;
-  border: 2px solid #333; /* Sivi border */
+  border: 2px solid #333;
   border-radius: 10px;
   padding: 30px;
   width: 45%;
@@ -39,9 +39,9 @@
 }
 
 .experience-card ul {
-  display: grid; /* Dodamo grid za postavitev v mreži */
-  grid-template-columns: repeat(2, 1fr); /* 2 elementa v vrstici */
-  gap: 20px; /* Razmik med elementi */
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
   list-style: none;
   padding: 0;
 }

@@ -32,8 +32,13 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <h1 className="logo">Žan</h1>
-      <ul className="nav-links">
+      <h1 className="nav-logo">Žan</h1>
+      <div className={`burger-menu ${menuOpen ? 'active' : ''}`} ref={menuIconRef} onClick={toggleMenu}>
+        <div />
+        <div />
+        <div />
+      </div>
+      <ul className={`nav-links ${menuOpen ? 'active' : ''}`} ref={menuRef}>
         <li><a href="#aboutMe">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>

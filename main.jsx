@@ -7,6 +7,7 @@ import Experience from './src/components/Skills'
 import Projects from './src/components/Projects'
 import ScrollToTop from './src/components/ScrollToTop'
 import './styles.css'
+import './src/styles/MediaQueries.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

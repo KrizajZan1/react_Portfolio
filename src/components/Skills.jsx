@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Skills.css';
 
 export default function Experience() {
@@ -11,42 +13,42 @@ export default function Experience() {
           <h3>Frontend Development</h3>
           <ul>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>HTML</strong>
                 <p>Experienced</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>CSS</strong>
                 <p>Experienced</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>JavaScript</strong>
                 <p>Basic</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>React</strong>
                 <p>Basic</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>Vue.js</strong>
                 <p>Basic</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>Git</strong>
                 <p>Basic</p>
@@ -58,42 +60,42 @@ export default function Experience() {
           <h3>Backend Development</h3>
           <ul>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>MySQL</strong>
                 <p>Intermidiate</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>MongoDB</strong>
                 <p>Basic</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>Python</strong>
                 <p>Basic</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>C#</strong>
                 <p>Intermediate</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>PHP</strong>
                 <p>Basic</p>
               </div>
             </li>
             <li>
-              <span className="checkmark">✔</span>
+              <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>SwiftUI</strong>
                 <p>Basic</p>
