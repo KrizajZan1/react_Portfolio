@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/AboutMe.css'; // Datoteka s stilom za novo sekcijo
+import '../styles/AboutMe.css';
 
 class OpenedTab extends React.Component {
   opentab = (tabname, event) => {
@@ -23,7 +23,7 @@ class OpenedTab extends React.Component {
               <div className="container">
                   <div className="row">
                       <div className="about-col-1">
-                          <img src='src/assets/user.png' alt="Profile"/>
+                          <img src='src/assets/me2.jpg' alt="Profile"/>
                       </div>
                       <div className="about-col-2">
                           <h1 className="sub-title">About me:</h1>

@@ -91,14 +91,14 @@ export default function Experience() {
               <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>PHP</strong>
-                <p>Basic</p>
+                <p>Learning</p>
               </div>
             </li>
             <li>
               <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>SwiftUI</strong>
-                <p>Basic</p>
+                <p>learning</p>
               </div>
             </li>
           </ul>
