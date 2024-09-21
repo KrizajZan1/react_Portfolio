@@ -1,20 +1,29 @@
-@media (max-width: 768px) {
+@media (max-width: 1080px) { /* Website for vertical monitor */
+  .experience-section{
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 768px) { /* Website for mobile phone */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .nav-logo{
+  .nav-logo {
     padding-top: 15px;
   }
 
   .nav-links {
     display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
     flex-direction: column;
     height: 190px;
     width: 40%;
     padding: 10px;
-    background-color: grey; /* */
+    background-color: grey;
     position: absolute;
     top: 80px;
     right: 20px;
@@ -25,6 +34,8 @@
 
   .nav-links.active {
     display: flex;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .nav-links a {
@@ -37,14 +48,32 @@
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
+    margin-left: 10px;
   }
 
-  .burger-menu div { /* urejanje burger ikone */
+  .burger-menu div {
     width: 25px;
     height: 3px;
     background-color: #333;
     margin: 5px 0;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .burger-menu.active div {
+    background-color: #333;
+  }
+
+  .burger-menu.active div:nth-child(1) {
+    transform: rotate(45deg) translate(0px, 10px);
+  }
+
+  .burger-menu.active div:nth-child(2) {
+    opacity: 0;
+    height: 5px;
+  }
+
+  .burger-menu.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -20px);
   }
 
   .profile-image {
@@ -59,17 +88,21 @@
     align-items: center;
   }
 
-  .about-content p{
+  .about-content p {
     text-align: center;
   }
 
-  .about-col-1{
+  .about-content h2{
+    font-size: 40px;
+  }
+
+  .about-col-1 {
     display: none;
   }
 
   .about-col-2 {
     flex-basis: 100%;
-    text-align: left; /* Dodajte to vrstico, da poravnate besedilo na levo */
+    text-align: left;
   }
 
   .about-col-2 .tab-links {
@@ -77,6 +110,9 @@
     margin: 0 10px 0 0;
   }
 
+  .experience-section{
+    padding-top: 150px;
+  }
 
   .experience-container {
     flex-direction: column;
@@ -89,7 +125,7 @@
   }
 
   .experience-card ul {
-    grid-template-columns: 1fr; /* Pri manjših zaslonih naj gre en element v vrstici */
+    grid-template-columns: 1fr;
   }
 
   .projects-container {
@@ -102,11 +138,12 @@
     margin-top: 10px;
   }
 
-  .project-card h3, p{
-  text-align: left;
+  .project-card h3,
+  p {
+    text-align: left;
   }
 
-  .project-buttons{
+  .project-buttons {
     text-align: center;
   }
 

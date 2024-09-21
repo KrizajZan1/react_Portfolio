@@ -1,8 +1,28 @@
-# React + Vite
+# Kaldi_WeatherAssignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description
+Weather App is a React application that allows users to search for weather data for various cities. The app maintains a search history and enables users to revisit previous searches or clear the history.
 
-Currently, two official plugins are available:
+# Features
+ - Search for weather data for entered cities.
+ - Display current temperature, feels-like temperature, minimum and maximum temperatures, and humidity.
+ - Store search history with the option to revisit previous searches.
+ - Option to clear search history.
+# Technologies
+ - React
+ - Axios for HTTP requests
+ - OpenWeatherMap API for weather data
+# Installation
+Clone the repository:
+ - git clone https://github.com/KrizajZan1/Kaldi_WeatherAssignment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Navigate to project directory:
+ - cd weather-app
+ 
+Install dependencies:
+ - npm install
+
+Run project:
+ - npm run dev
+
+> I know API keys are private information but I included mine in .env file so it is easier for you to run the program.

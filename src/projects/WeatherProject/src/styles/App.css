@@ -3,20 +3,6 @@
   font-family: Arial, sans-serif;
 }
 
-.search-history {
-  margin: 20px;
-}
-
-.search-history ul {
-  list-style: none;
-  padding: 0;
-}
-
-.search-history li {
-  cursor: pointer;
-  margin: 5px 0;
-}
-
 .weather-display {
   margin: 20px;
 }

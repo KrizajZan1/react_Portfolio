@@ -1,6 +1,6 @@
 #about {
-  padding: 80px 0;
-  color: #333;
+  padding: 100px 0;
+  color: black;
 }
 
 #about a {
@@ -75,7 +75,7 @@
 
 .tab-contents ul li span {
   color: #333;
-  font-size: 14px;
+  font-size: 25px;
 }
 
 .tab-contents {
