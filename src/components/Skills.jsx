@@ -10,7 +10,7 @@ export default function Experience() {
 
       <div className="experience-container">
         <div className="experience-card">
-          <h3>Frontend Development</h3>
+          <h3>Front-end Development</h3>
           <ul>
             <li>
               <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
@@ -57,7 +57,7 @@ export default function Experience() {
           </ul>
         </div>
         <div className="experience-card">
-          <h3>Backend Development</h3>
+          <h3>Back-end Development</h3>
           <ul>
             <li>
               <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
@@ -98,7 +98,7 @@ export default function Experience() {
               <span className="checkmark"><FontAwesomeIcon icon={faCheck} /></span>
               <div>
                 <strong>SwiftUI</strong>
-                <p>learning</p>
+                <p>Learning</p>
               </div>
             </li>
           </ul>

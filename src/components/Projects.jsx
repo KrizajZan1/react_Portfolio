@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable'; // Importing react-swipeable
+import { useSwipeable } from 'react-swipeable';
 import '../styles/projects.css';
 
 export default function Projects() {
@@ -9,7 +9,7 @@ export default function Projects() {
     {
       title: 'To-do List',
       description:
-        'Developed simple To-do list website with HTML, CSS, JavaScript where user can add tasks which are saved with localStorage.',
+        'Developed a simple To-do list website, where the user can add, edit or remove tasks. Tasks are stored in localStorage, so that if the page is refreshed, we do not lose them. Feel free to check the project via the link below.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       image: 'src/assets/todoList.png',
       github: 'https://github.com/KrizajZan1/todoList',
@@ -18,7 +18,7 @@ export default function Projects() {
     {
       title: 'Calculator',
       description:
-        'Developed a simple calculator website with HTML, CSS and JavaScript.',
+        'Developed a simple calculator website that allows the user to add, subtract, multiply and divide. It also has a operation history which allows user to see his last 10 operations that he performed. You can preview the project via the link below.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       image: 'src/assets/Calculator.png',
       github: 'https://github.com/KrizajZan1/Calculator',
@@ -27,8 +27,8 @@ export default function Projects() {
     {
       title: 'Open Weather API',
       description:
-        'React project that allows user to know weather information of a city he enters in the search bar.',
-      technologies: ['React', 'API', 'CSS'],
+        'This website was developed as part of an application for a job opportunity. It allows user to obtain weather data for a city that he searches. This is achieved by using OpenWeather API. Preview the project via the link below.',
+      technologies: ['React', 'CSS', 'API'],
       image: 'src/assets/WeatherProjekt.PNG',
       github: 'https://github.com/KrizajZan1/Kaldi_WeatherAssignment',
       demo: 'http://weather.krizajzan.com/',
@@ -36,8 +36,8 @@ export default function Projects() {
     {
       title: 'Vue Star Wars API',
       description:
-        'Developed website with Vue.js that fetches data from SWAPI and displays it.',
-      technologies: ['Vue.js'],
+        'Developed website with Vue.js that fetches data from Star Wars API about 3 characters from Star Wars and displays it. It then also allows user to alter that data which is then saved in localStorage.',
+      technologies: ['Vue.js', 'CSS', 'API'],
       image: 'src/assets/StarWarsAPI.png',
       github: 'https://github.com/KrizajZan1/vueStarWarsAPI',
     },
@@ -82,6 +82,7 @@ export default function Projects() {
             <p>{projects[currentProject].description}</p>
             <div className="space"></div>
             <ul className="tech-list">
+              <h3>Technologies used:</h3>
               {projects[currentProject].technologies.map((tech, index) => (
                 <li key={index}>{tech}</li>
               ))}

@@ -134,26 +134,29 @@
   }
 
   .project-card {
-    flex-direction: column; /* Postavimo elemente navpično */
+    flex-direction: column;
     align-items: center;
-    width: 80%; /* Zavzame celotno širino */
+    width: 80%;
+    padding: 20px;
+    max-height: none; 
   }
 
   .project-image {
     width: 100%;
     max-width: 100%;
     margin-top: 20px;
-    height: auto; /* Prilagodimo višino */
+    height: auto; 
   }
 
   .project-info {
-    padding-right: 0;
-    width: 90%; /* Na mobilnih napravah prilagodimo širino */
-    text-align: center; /* Centriramo besedilo */
+    width: 100%;
+    padding: 20px;
+    text-align: left;
   }
 
   .project-buttons {
     text-align: center;
+    margin-top: 20px;
   }
 
   .scroll-button {
@@ -163,7 +166,7 @@
   }
 
   .nav-arrow {
-    margin: 10px 0; /* Daj razmik nad in pod gumbom */
+    margin: 10px 0;
   }
 
   .project-indicators {

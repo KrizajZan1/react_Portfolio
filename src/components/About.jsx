@@ -34,7 +34,7 @@ export default function About() {
         <img src="src/assets/me.jpg" alt="Your profile" className="profile-image" />
         <div>
           <h2>Hello, I'm Žan Križaj</h2>
-          <p>Aspiring Frontend Developer</p>
+          <p>Aspiring Front-end Developer</p>
           <div className="about-buttons">
             <button className="btn" onClick={downloadCV}>
               Download CV
