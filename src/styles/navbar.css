@@ -9,7 +9,7 @@ html {
   padding: 20px 50px;
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: relative; /* Dodano za pravilno pozicioniranje burger menija */
+  position: relative;
 }
 
 .nav-logo {
@@ -21,20 +21,42 @@ html {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 
-.nav-links a {
-  text-decoration: none;
+.links {
+  position: relative;
+  margin-right: 20px;
   font-size: 1.3em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.links a {
+  text-decoration: none;
   color: #333;
+  position: relative;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+.links a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: width 0.5s ease-in-out;
 }
 
-/* Styles for burger menu */
+.links a:hover::after {
+  width: 60%;
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+
 .burger-menu {
   display: none;
   flex-direction: column;
@@ -43,7 +65,7 @@ html {
   position: absolute;
   right: 20px;
   top: 20px;
-  z-index: 1001; /* Ensure it's above other content */
+  z-index: 1001;
 }
 
 .burger-menu div {
@@ -54,7 +76,6 @@ html {
   transition: background-color 0.3s;
 }
 
-/* Styles for the expanded nav menu */
 .nav-links.active {
   display: flex;
 }

@@ -20,9 +20,9 @@
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
     flex-direction: column;
-    height: 190px;
-    width: 40%;
-    padding: 10px;
+    height: 130px;
+    width: 35%;
+    padding: 10px 0;
     background-color: grey;
     position: absolute;
     top: 80px;
@@ -36,11 +36,6 @@
     display: flex;
     opacity: 1;
     transform: translateY(0);
-  }
-
-  .nav-links a {
-    padding: 15px;
-    border-bottom: 1px solid #222;
   }
 
   .burger-menu {

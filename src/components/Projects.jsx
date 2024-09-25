@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import '../styles/projects.css';
 
 export default function Projects() {
   const [currentProject, setCurrentProject] = useState(0);
+  const [fade, setFade] = useState(false); // Dodaj stanje za fade
 
   const projects = [
     {
@@ -44,14 +45,21 @@ export default function Projects() {
   ];
 
   const handlePrevClick = () => {
-    setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+    setFade(true);
+    setTimeout(() => {
+      setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+      setFade(false);
+    }, 300);
   };
 
   const handleNextClick = () => {
-    setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+    setFade(true);
+    setTimeout(() => {
+      setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+      setFade(false);
+    }, 300); 
   };
 
-  // Swipe handlers using react-swipeable
   const swipeHandlers = useSwipeable({
     onSwipedLeft: handleNextClick,
     onSwipedRight: handlePrevClick,
@@ -69,7 +77,7 @@ export default function Projects() {
           &#10094;
         </button>
 
-        <div className="project-card">
+        <div className={`project-card ${fade ? 'fade' : ''}`}>
           <img
             src={projects[currentProject].image}
             alt={projects[currentProject].title}
@@ -119,7 +127,13 @@ export default function Projects() {
           <span
             key={index}
             className={`indicator ${index === currentProject ? 'active' : ''}`}
-            onClick={() => setCurrentProject(index)}
+            onClick={() => {
+              setFade(true);
+              setTimeout(() => {
+                setCurrentProject(index);
+                setFade(false);
+              }, 300);
+            }}
           ></span>
         ))}
       </div>
