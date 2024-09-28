@@ -4,7 +4,7 @@ import '../styles/projects.css';
 
 export default function Projects() {
   const [currentProject, setCurrentProject] = useState(0);
-  const [fade, setFade] = useState(false); // Dodaj stanje za fade
+  const [fade, setFade] = useState(false);
 
   const projects = [
     {
@@ -69,7 +69,7 @@ export default function Projects() {
   return (
     <section id="projects" className="projects" {...swipeHandlers}>
       <h2>
-        Browse My Recent <span>Projects</span>
+        Browse my recent <span>projects</span>
       </h2>
 
       <div className="projects-container">

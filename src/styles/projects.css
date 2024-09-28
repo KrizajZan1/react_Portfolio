@@ -64,7 +64,9 @@
 }
 
 .tech-list li {
+  padding-left: 12px;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .tech-list h3{

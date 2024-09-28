@@ -6,7 +6,7 @@ import '../styles/Skills.css';
 export default function Experience() {
   return (
     <section id="skills" className="experience-section">
-      <h2>Explore My <span>Skills</span></h2>
+      <h2>Explore my <span>skills</span></h2>
 
       <div className="experience-container">
         <div className="experience-card">
