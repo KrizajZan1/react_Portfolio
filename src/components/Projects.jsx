@@ -42,6 +42,14 @@ export default function Projects() {
       image: 'src/assets/StarWarsAPI.png',
       github: 'https://github.com/KrizajZan1/vueStarWarsAPI',
     },
+    {
+      title: 'Rock Paper Scissors',
+      description:
+        'Developed a project with Python that allows user to play against a computer in a game of rock paper scissors',
+      technologies: ['Python'],
+      image: 'src/assets/rockpaperscissors.jfif',
+      github: 'https://github.com/KrizajZan1/RockPaperScissors',
+    },
   ];
 
   const handlePrevClick = () => {
